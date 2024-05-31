@@ -9,6 +9,7 @@ import Hoohah from './Hoohah'
 import AboutRnM from './AboutRnM'
 import Characters from './Characters'
 import ShowPage from './ShowPage'
+import VideoShowPage from './VideoShowPage'
 
 function App() {
  
@@ -23,6 +24,7 @@ function App() {
           <Route path='/AboutRnM' element={ <AboutRnM/> } />
           <Route path='/Characters' element={ <Characters/> } />
           <Route path='/ShowPage/:id' element={ <ShowPage/> } />
+          <Route path='/VideoShowPage/:id' element={ <VideoShowPage/> } />
         </Routes>
       </Router>
     </div>

@@ -25,7 +25,7 @@ export default function Characters() {
     return(
         <div>
             <Link to='/'>Home</Link>
-            <h2>Here's a list of Characters for the show</h2>
+            <h2>Here's a list of Characters on the show</h2>
             <ul>
                 <div className="charList">
                     {characters.map((char) => (
