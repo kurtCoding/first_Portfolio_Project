@@ -22,7 +22,7 @@ function App() {
           <Route path='/Hoohah' element={ <Hoohah/> } />
           <Route path='/AboutRnM' element={ <AboutRnM/> } />
           <Route path='/Characters' element={ <Characters/> } />
-          <Route path='/ShowPage' element={ <ShowPage/> } />
+          <Route path='/ShowPage/:id' element={ <ShowPage/> } />
         </Routes>
       </Router>
     </div>

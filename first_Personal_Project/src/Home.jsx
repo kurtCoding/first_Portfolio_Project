@@ -19,13 +19,15 @@ export default function Home() {
 
     return (
         <div>
-            <h1>Welcome to my Ricky and Morty Webpage!</h1>
+            <h1>Welcome to my Rick and Morty Webpage!</h1>
             <h2>Iv'e been expecting you</h2> 
             <br/>
-            <Link to='/AboutMe'>About Me</Link>
-            <Link to='/Hoohah' >What's all the Hoohah?</Link>
-            <Link to='/AboutRnM'>Rick&Morty</Link>
-            <Link to='/Characters'>Characters</Link>
+            <div>
+                <Link to='/AboutMe'>About Me</Link> <br/>
+                <Link to='/Hoohah' >What's all the Hoohah?</Link> <br/>
+                <Link to='/AboutRnM'>Rick & Morty</Link> <br/>
+                <Link to='/Characters'>Characters</Link>
+            </div>
         </div>
     )
 }
