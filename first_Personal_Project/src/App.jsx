@@ -6,18 +6,23 @@ import './App.css'
 import Home from './Home'
 import AboutMe from './AboutMe'
 import Hoohah from './Hoohah'
+import AboutRnM from './AboutRnM'
+import Characters from './Characters'
+import ShowPage from './ShowPage'
 
 function App() {
  
 
   return (
     <div>
-    <h1>Welcome to my Ricky and Morty Webpage!</h1>
       <Router>
         <Routes>
           <Route path='/' element={ <Home/> }/>
-          <Route path='/aboutme' element={ <AboutMe/> } />
-          <Route path='/hoohah' element={ <Hoohah/> } />
+          <Route path='/AboutMe' element={ <AboutMe/> } />
+          <Route path='/Hoohah' element={ <Hoohah/> } />
+          <Route path='/AboutRnM' element={ <AboutRnM/> } />
+          <Route path='/Characters' element={ <Characters/> } />
+          <Route path='/ShowPage' element={ <ShowPage/> } />
         </Routes>
       </Router>
     </div>
