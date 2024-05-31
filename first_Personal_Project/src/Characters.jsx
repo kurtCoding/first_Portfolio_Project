@@ -15,9 +15,7 @@ export default function Characters() {
             Promise.all(responses.map(response => response.json())))
             .then(data => {
                 console.log(data)
-                const allCharacters = data[0].results.map((char) => {
-                    return char.name  
-                })
+                const allCharacters = data[0].results
                 setCharacters(allCharacters);
             })
             .catch(error => {
@@ -30,9 +28,9 @@ export default function Characters() {
             <h2>Here's a list of Characters for the show</h2>
             <ul>
                 <div className="charList">
-                    {characters.map((character) => (
+                    {characters.map((char) => (
                         <li key={char.id}>
-                            <Link to={`/ShowPage/${character.id}`}>{character.name}</Link>
+                            <Link to={`/ShowPage/${char.id}`}>{char.name}</Link>
                         </li>
                         ))}
                 </div>
