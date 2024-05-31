@@ -41,11 +41,12 @@ export default function Hoohah() {
              <p>    -The rise of the Church of the Headism represents how a single event can lead to mass hysteria and the establishment of new world orders or religions. This echoes conspiracy theories about how global events or the appearance of powerful entities can lead to drastic societal changes and manipulation of the masses.</p>
 
             </div>
+            <p>Here's a list of some episodes:</p>
             <ul>
                 <div className="episodeList">
                     {episodes.map((episode) => (
                         <li key={episode.id}>
-                            <Link to={`/VideoShowPage/${episode.name}`}>{episode.name}</Link>
+                            <Link to={`/VideoShowPage/${episode.id}`}>{episode.name}</Link>
                         </li>
                         ))}
                 </div>

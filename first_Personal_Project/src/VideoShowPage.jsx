@@ -5,13 +5,14 @@ import { Link, useParams } from "react-router-dom";
 export default function VideoShowPage() {
 
     const { id } = useParams();
-    const [episode, setEpisode] = useState(null);
+    const [episode, setEpisode] = useState([]);
 
     useEffect(() => {
         fetch(`https://rickandmortyapi.com/api/episode/${id}`).then((response) => response.json())
         .then((data) => {
             setEpisode(data)
-        })
+            console.log(data, "line 14")
+        }).catch((error) => console.log('Error fetching episode'))
     }, [id])
 
     if (!episode) {
@@ -21,6 +22,8 @@ export default function VideoShowPage() {
     return(
         <div>
             <h1>🎥</h1>
+            <Link to='/'>Home</Link> <br/>
+            <Link to='/Hoohah'>What's all the Hoohah?</Link>
             <div>
                 <h2>{episode.name}</h2>
                 <iframe 
