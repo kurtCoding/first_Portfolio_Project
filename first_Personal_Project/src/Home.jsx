@@ -24,8 +24,8 @@ export default function Home() {
             <br/>
             <div>
                 <Link to='/AboutMe'>About Me</Link> <br/>
-                <Link to='/Hoohah' >What's all the Hoohah?</Link> <br/>
                 <Link to='/AboutRnM'>Rick & Morty</Link> <br/>
+                <Link to='/Hoohah' >What's all the Hoohah?</Link> <br/>
                 <Link to='/Characters'>Characters</Link>
             </div>
         </div>
