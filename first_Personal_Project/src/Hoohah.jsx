@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
+const API_KEY = import.meta.env.VITE_API_KEY
 
+console.log(API_KEY, "line 6")
 
 export default function Hoohah() {
 
     const [episodes, setEpisodes] = useState([]);
 
     useEffect(() => {
-        fetch("https://rickandmortyapi.com/api/episode").then((res) => res.json())
+        fetch(`${API_KEY}/episode`).then((res) => res.json())
         .then((data) => {
             console.log(data)
             const allEpisodes = data.results

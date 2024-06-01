@@ -15,7 +15,7 @@ function App() {
  
 
   return (
-    <div>
+    <>
       <Router>
         <Routes>
           <Route path='/' element={ <Home/> }/>
@@ -27,7 +27,7 @@ function App() {
           <Route path='/VideoShowPage/:id' element={ <VideoShowPage/> } />
         </Routes>
       </Router>
-    </div>
+    </>
   )
 }
 

@@ -19,8 +19,8 @@ export default function Home() {
 
     return (
         <div>
-            <h1>Welcome to my Rick and Morty Webpage!</h1>
-            <h2>Iv'e been expecting you</h2> 
+            <h1 className="title">Welcome to my Rick and Morty Webpage!</h1>
+            <h2 className="expectingYou">Iv'e been expecting you</h2> 
             <br/>
             <div>
                 <Link to='/AboutMe'>About Me</Link> <br/>

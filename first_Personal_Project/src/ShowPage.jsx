@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import "./ShowPage.css"
 
 
 export default function ShowPage() {
@@ -18,12 +19,12 @@ export default function ShowPage() {
     }
 
     return(
-        <div>
-            <h1>👀</h1>
+        <div className="characterPage">
+            <h1 className="eyes">👀</h1>
             <Link to='/'>Home</Link> <br/>
             <Link to='/Characters'>Characters</Link> 
-            <div>
-                <img src={character.image} alt={character.name} />
+            <div className="characterInfo">
+                <img className="characterImg" src={character.image} alt={character.name} />
                 <h3>{character.name}</h3>
                 <p>Species: {character.species}</p>
                 <p>Gender: {character.gender}</p>
