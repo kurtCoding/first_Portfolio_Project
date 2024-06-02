@@ -11,7 +11,7 @@ export default function AboutRnM() {
             <h2>Here's a little run down of Rick & Morty for those who missed out!</h2>
 
             <div className="RnM_Info">
-                <p>So What exactly <em>is</em> Rick & Morty??</p> <br/>
+                <p className="soWhat">So What exactly <em>is</em> Rick & Morty??</p> <br/>
 
                 <p>"Rick and Morty" is an animated science fiction sitcom created by <strong>Justin Roiland</strong> and <strong>Dan Harmon</strong>. It debuted on Adult Swim in 2013 and quickly gained a massive following.</p>
 
